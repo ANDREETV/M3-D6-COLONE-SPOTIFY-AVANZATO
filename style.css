@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+}
+.header{
+    margin-bottom: 180px;
+}
+/* .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+} */
+
+
+
+.login{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.login img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%
+    
+}
+
+.tondo{
+    border-radius: 21px 21px 0 0;
+}
+
+.tondo-img{
+    border-radius: 20px 20px 0 0;
+}
+
+.altezza{
+    height: 400px;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.largo{
+    object-fit: contain;
+    object-position: right;
+}
+
+
+.album{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.podcast{
+    justify-content: center;
+}
+.dimensione{
+    width: 18%;
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.media{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media i{
+    font-size: 1.9em;
+    color: white;
+}
+
+/* section{
+    position: relative;
+    margin-bottom: 80px;
+} */
+
+.bottone{
+    margin: 10px;
+} 
+
+#frase{
+    color: white;
+    
+}
+
+.bottone-traccia{
+    transition:  1s;
+}
+
+.bottone-traccia:hover{
+    box-shadow:  0 15px 15px rgb(154, 185, 154) ;
+    transform: scale(1.2) ;
+    
+}
+
+.translate-middle{
+    left: 190px; 
+    top: 15px;
+}
+

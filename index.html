@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Spotify Clone</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img style="width: 100px;" src="img/spotify.svg" alt=""></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#musica">Musica</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Recensioni">Recensioni Album</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Hall">Hall Of Shame</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#podcast">Podcast</a>
+                            </li>
+                        </ul>
+                        <div class="login m-2 ">
+                            <img src="https://i.pravatar.cc/400" alt="">
+                        </div>
+                        <form class="d-flex" role="search">
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Cerca"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Cerca</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="carousel" class="container mt-4"> 
+                <div id="carouselExample" class="carousel slide " data-bs-ride="carousel slide">
+                    <div class="carousel-inner altezza">
+                        <div class="carousel-item active">
+                            <img src="img/Lazza.webp" class="d-block  w-100 h-100 largo" alt="...">
+                        </div>
+                        <div class="carousel-item sfondo">
+                            <img src="img/tatanai.jpg" class="d-block  w-100 h-100 largo" alt="...">
+                        </div>
+                        <div class="carousel-item sfondo">
+                            <img
+                                src="https://m.media-amazon.com/images/I/81flpuYon7L.jpg" class="d-block w-100 h-100 largo" alt="...">
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button 
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </section>
+
+            <section id="musica" class="container my-4">
+                <div>
+                    <h2 id="musica" class="my-3 ps-2 text-white">Musica</h2>
+                    <div class="row gy-4">
+                        <div class="col-6 col-md-4 col-lg-3 h-100 carta-preferiti">
+                            <div class="card tondo h-100">
+                                <img src="img/Lazza.webp" class="img-fluid tondo-img" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Sirio &#8226 Cenere &#8226 Rap &#8226 3:28</p>
+                                </div>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
+                                    Rap
+                                </span>                              
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3  h-100 carta-preferiti">
+                            <div class="card tondo  h-100">
+                                <img src="img/blanco.jpg" class="img-fluid tondo-img" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Blu Celeste &#8226 Paraocchi &#8226 Rap &#8226 2:36</p>
+                                </div>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
+                                    Rap
+                                </span> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3  h-100">
+                            <div class="card tondo  h-100">
+                                <img src="img/future.jpg" class="img-fluid tondo-img" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Future &#8226 Mask Off &#8226 Hip-hop/Rap &#8226 3:24</p>
+                                </div>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
+                                    Rap
+                                </span> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3  h-100">
+                            <div class="card tondo  h-100">
+                                <img src="img/thasup.jpg" class="img-fluid tondo-img" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">23 6451 &#8226 Offline &#8226 Hip-hop/Rap &#8226 3:21</p>
+                                </div>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
+                                    Rap
+                                </span> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3  h-100">
+                            <div class="card tondo  h-100">
+                                <img src="img/Psicologi.jpg" class="img-fluid tondo-img" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Millennium Bug X &#8226 Fantasma &#8226 Pop &#8226 3:28</p>
+                                </div>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
+                                    Pop
+                                </span> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3  h-100">
+                            <div class="card tondo  h-100">
+                                <img src="img/Gemitaiz.jpg" class="img-fluid tondo-img" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Nonostante Tutto &#8226 Bene &#8226 Rap &#8226 3:57</p>
+                                </div>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
+                                    Rap
+                                </span> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3  h-100">
+                            <div class="card tondo  h-100">
+                                <img src="img/SALMO.jpg" class="img-fluid tondo-img" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Playlist Live &#8226 RICCHI E MORTI &#8226 Rap &#8226 2:18</p>
+                                </div>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
+                                    Rap
+                                </span> 
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-3  h-100">
+                            <div class="card tondo  h-100">
+                                <img src="img/SFERA.jpg" class="img-fluid tondo-img" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Famoso &#8226 Bottiglie Privè &#8226 Rap &#8226 3:09</p>
+                                </div>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
+                                    Rap
+                                </span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recensioni-album" class="container img-centro">
+                <div>
+                    <h2 id="recensioni" class="my-3 ps-2 text-white">Recensioni Album</h2>
+                    <div class="album">
+                        <img src="img/Gemitaiz.jpg" alt="">
+                    </div>
+                    <table class="table text-white">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Albun</th>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Durata</th>
+                                <th scope="col">Genere</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nonostante Tutto</td>
+                                <td>Bene</td>
+                                <td>3:57</td>
+                                <td>Rap</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="hall-of-shame" class="container ">
+                <div>
+                    
+                    <h2 id="hall" class="my-3 ps-2 text-white">Hall Of Shame</h2>
+                    <table id="tabella" class="table text-white">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Albun</th>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Durata</th>
+                                <th scope="col">Genere</th>
+                                <th scope="col">Elimina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-primary">
+                                <th scope="row">1</th>
+                                <td>Sirio</td>
+                                <td>Cenere</td>
+                                <td>3:28</td>
+                                <td>Rap</td>
+                                <td><button  type="button" class="elimina-riga btn btn-danger">Elimina</button></td>
+                            </tr>
+                            <tr class="table-success">
+                                <th scope="row">2</th>
+                                <td>Blu Celeste</td>
+                                <td>Paraocchi</td>
+                                <td>2:36</td>
+                                <td>Rap</td>
+                                <td><button type="button" class="elimina-riga btn btn-danger">Elimina</button></td>
+                            </tr>
+                            <tr class="table-primary"> 
+                                <th scope="row">3</th>
+                                <td>Future</td>
+                                <td>Mask Off</td>
+                                <td>3:24</td>
+                                <td>Hip-hop/Rap</td>
+                                <td><button type="button" class="elimina-riga btn btn-danger">Elimina</button></td>
+                            </tr>
+                            <tr class="table-success">
+                                <th scope="row">4</th>
+                                <td>23 6451</td>
+                                <td>Offline</td>
+                                <td>3:21</td>
+                                <td>Hip-hop/Rap</td>
+                                <td><button type="button" class="elimina-riga btn btn-danger">Elimina</button></td>
+                            </tr>
+                            <tr class="table-primary">
+                                <th scope="row">5</th>
+                                <td>Millennium Bug X</td>
+                                <td>Fantasma</td>
+                                <td>3:28</td>
+                                <td>Pop</td>
+                                <td><button type="button" class="elimina-riga btn btn-danger">Elimina</button></td>
+                            </tr>
+                            <tr class="table-success">
+                                <th scope="row">6</th>
+                                <td>Nonostante Tutto</td>
+                                <td>Bene</td>
+                                <td>3:57</td>
+                                <td>Rap</td>
+                                <td><button type="button" class="elimina-riga btn btn-danger">Elimina</button></td>
+                            </tr>
+                            <tr class="table-primary">
+                                <th scope="row">7</th>
+                                <td>Playlist Live</td>
+                                <td>RICCHI E MORTI</td>
+                                <td>2:18</td>
+                                <td>Rap</td>
+                                <td><button type="button" class="elimina-riga btn btn-danger">Elimina</button></td>
+                            </tr>
+                            <tr class="table-success">
+                                <th scope="row">8</th>
+                                <td>Famoso</td>
+                                <td>Bottiglie Privè</td>
+                                <td>3:09</td>
+                                <td>Rap</td>
+                                <td><button type="button" class="elimina-riga btn btn-danger">Elimina</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <button type="button" class="btn bottone-traccia btn-success w-25" data-bs-toggle="modal" data-bs-target="#exampleModal-traccia">Aggiungi traccia</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="modal fade"
+                    id="exampleModal-traccia"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Aggiungi traccia</h1>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                    
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="mb-3 col-6">
+                                                <label for="recipient-name" class="col-form-label ">Numero della traccia:</label>
+                                                <input type="text" class="form-control" id="recipient-numero">
+                                            </div>
+                                            <div class="mb-3 col-6">
+                                                <label for="recipient-name" class="col-form-label ">Titolo della traccia:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3 col-6">
+                                                <label for="recipient-name" class="col-form-label ">Nome dell’artista:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3 col-6">
+                                                <label for="recipient-name" class="col-form-label ">Durata della traccia:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                    <button type="button" class="btn btn-primary" onclick="aggiungiRiga()">Aggiungi traccia</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="podcast-fine" class="container">
+                <div>
+                    <h2 id="podcast" class="my-3 ps-2 text-white">Podcast</h2>
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3 d-flex flex-row flex-wrap w-100 podcast">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab67656300005f1fc88ce2f09a24f4a111b46d24" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab6765630000ba8ae676200e516189520b599762" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab67656300005f1fe142a27f0ececb824f5386b8" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab6765630000ba8a4e0a081ee0ac73a04e3bac7e" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab67656300005f1f4c1b112a7dc4a31ff45876a2" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/e048b26a93dc026381ab0107e6c01e4e3417b14a" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab6765630000ba8ab3bd06124ba4ab286f67ce8e" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/e70a19d9f4b39df97adaa5fc20f30144c34d359e" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/c97b5b44f56bff61f415ea90252f54243facf83d" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab67656300005f1f55736a9d3499bdc44f89806f" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab6765630000ba8abf83ca588104a49b66a5d84f" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ece2d6373f4de95ffc3438d6c2e49e97dc07b084" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/0f90a649b929f4fbe2c0bd818335c346364d7c6c" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/28b12e1fb7e6938a80b88fd63a45f96dfff4b3a0" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab67656300005f1feeab5a39c7408a312f44df33" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab6765630000ba8ad865de1cd724cfa796a14094" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab6765630000ba8af792739350c2cac05cec9ca4"  alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab67656300005f1fb6a70be2cc90739547a17bcc" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab6765630000ba8ab130f20de267f6abc20ac015" alt="">
+                            <img class="dimensione" src="https://i.scdn.co/image/ab67656300005f1f8a33a87de2eea4a8ef49b920" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="nav" class="mt-5 ">
+            <div class="card text-center bg-black text-light border-white">
+                <div class="card-header border-white">
+                    Spotify
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Social</h5>
+                    <div class="social mt-3">
+                        <a href="https://www.instagram.com/spotify/"><div class="media"><i class="ri-instagram-line"></i></div></a>
+                        <a href="https://twitter.com/spotify"><div class="media mx-3"><i class="ri-twitter-line"></i></div></a>
+                        <a href="https://www.facebook.com/Spotify"><div class="media"><i class="ri-facebook-circle-line"></i></div></a>
+                    </div>
+                </div>
+
+                <div id="frase" class="card-footer text-muted border-white">
+                    <!-- al momento del caricamento della pagina, il numero di album presenti nella
+                    pagina. -->
+                </div>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script src="Bootstrap/js/bootstrap.js"></script>
+    </body>
+</html>
